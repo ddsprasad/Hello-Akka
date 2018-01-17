@@ -1,6 +1,6 @@
-package com.dfz.akka.core
+package com.dfz.akka.core.basics
 
-import akka.actor.{Props, ActorSystem, PoisonPill}
+import akka.actor.{ActorSystem, PoisonPill, Props}
 
 /**
   * Created by prasad on 1/17/2018.
