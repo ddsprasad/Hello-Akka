@@ -1,4 +1,4 @@
-package com.dfz.akka
+package com.dfz.akka.core
 
 import akka.actor.{Actor, ActorSystem, Props}
 

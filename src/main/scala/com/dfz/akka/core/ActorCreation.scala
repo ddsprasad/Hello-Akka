@@ -1,8 +1,6 @@
-package com.dfz.akka
+package com.dfz.akka.core
 
-import akka.actor.{ActorSystem, Props, Actor}
-import com.dfz.akka.MusicController.{Stop, Play}
-import com.dfz.akka.MusicPlayer.{StratMusic, StopMusic}
+import akka.actor.{Actor, ActorSystem, Props}
 
 /**
   * Created by prasad on 1/8/2018.
@@ -48,7 +46,7 @@ class MusicPlayer extends Actor {
       println("I dont want to play Music")
     case StratMusic =>
       val controller = context.actorOf(MusicController.props,"Contoller")
-      controller ! Play
+//      controller ! Play
   }
 }
 
@@ -56,7 +54,7 @@ object Creation extends App{
   val system = ActorSystem("Creation")
   val  player = system.actorOf(Props[MusicPlayer],"Player")
 
-  player ! StratMusic
+//  player ! StratMusic
 //  player ! StopMusic
 
   system.terminate()

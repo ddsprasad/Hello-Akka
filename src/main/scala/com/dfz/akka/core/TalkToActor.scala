@@ -1,10 +1,10 @@
-package com.dfz.akka
+package com.dfz.akka.core
 
 import akka.actor.{Actor, ActorRef, ActorSystem, Props}
 import akka.pattern.ask
 import akka.util.Timeout
-import com.dfz.akka.Checker.{BlackUser, CheckUser}
-import com.dfz.akka.Storage.AddUser
+import com.dfz.akka.core.Checker.{BlackUser, CheckUser}
+import com.dfz.akka.core.Storage.AddUser
 
 import scala.concurrent.duration._
 
